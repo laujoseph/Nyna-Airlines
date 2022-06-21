@@ -19,7 +19,7 @@ const Results = () => {
 
     let config = {
       method: "post",
-      url: "http://127.0.0.1:5001/getFlights",
+      url: "https://nyna-airlines-server.herokuapp.com/getFlights",
       headers: {
         "Content-Type": "application/json",
       },
