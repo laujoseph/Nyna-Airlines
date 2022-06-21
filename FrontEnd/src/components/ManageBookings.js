@@ -107,7 +107,7 @@ const ManageBookings = () => {
             style={{
               color: "black",
             }}
-            href="http://localhost:3000/news"
+            href="https://nyna-airlines.vercel.app/news"
           >
             Relaxation of Singapore's border measures from 1 April 2022
           </Link>

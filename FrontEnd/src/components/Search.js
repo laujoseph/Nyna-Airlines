@@ -79,7 +79,9 @@ const Search = () => {
 
   //FETCH DATA GETDESTINATIONS
   const fetchPost = async () => {
-    const res = await fetch("http://localhost:5001/getdestinations");
+    const res = await fetch(
+      "https://nyna-airlines-server.herokuapp.com/getdestinations"
+    );
     const data = await res.json();
     setPaxFrom(data);
   };
@@ -117,7 +119,7 @@ const Search = () => {
             style={{
               color: "black",
             }}
-            href="http://localhost:3000/news"
+            href="https://nyna-airlines.vercel.app/news"
           >
             Relaxation of Singapore's border measures from 1 April 2022
           </Link>

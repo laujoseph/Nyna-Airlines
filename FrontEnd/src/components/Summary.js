@@ -86,7 +86,7 @@ const Summary = (props) => {
   };
 
   const paymentHandler = () => {
-    fetch("http://localhost:5001/makePayment", {
+    fetch("https://nyna-airlines-server.herokuapp.com/makePayment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -89,8 +89,8 @@ router.post("/makePayment", async (req, res) => {
           quantity: booking.passengerInfo.length,
         };
       }),
-      success_url: `http://localhost:5001/paymentCheck/${bookingRef}/${pSuccessID}`,
-      cancel_url: `http://localhost:5001/paymentCheck/${bookingRef}/${pFailID}`,
+      success_url: `https://nyna-airlines-server.herokuapp.com/paymentCheck/${bookingRef}/${pSuccessID}`,
+      cancel_url: `https://nyna-airlines-server.herokuapp.com/paymentCheck/${bookingRef}/${pFailID}`,
     });
     res.json({ url: session.url });
     createBooking(booking, bookingRef, pSuccessID, pFailID);
@@ -117,7 +117,7 @@ router.get("/paymentCheck/:bookingRef/:id", (req, res) => {
 
               addToFlight(data.booking).then(() =>
                 res.redirect(
-                  `http://localhost:3000/manage/${req.params.bookingRef}/${data.booking.passengerInfo[0].lastName}`
+                  `https://nyna-airlines.vercel.app/manage/${req.params.bookingRef}/${data.booking.passengerInfo[0].lastName}`
                 )
               );
             }
@@ -126,7 +126,7 @@ router.get("/paymentCheck/:bookingRef/:id", (req, res) => {
       } else {
         console.log(`payment fail`);
         res.redirect(
-          `http://localhost:3000/paymentfail/${req.params.bookingRef}/${data.booking.passengerInfo[0].lastName}`
+          `https://nyna-airlines.vercel.app/paymentfail/${req.params.bookingRef}/${data.booking.passengerInfo[0].lastName}`
         );
       }
     } else console.log(`Booking Reference Not Found in DB!`);
