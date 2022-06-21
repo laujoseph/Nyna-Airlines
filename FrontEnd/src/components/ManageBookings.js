@@ -69,7 +69,7 @@ const ManageBookings = () => {
 
     let config = {
       method: "post",
-      url: "http://127.0.0.1:5001/getBooking",
+      url: "https://nyna-airlines-server.herokuapp.com/getBooking",
       headers: {
         "Content-Type": "application/json",
       },

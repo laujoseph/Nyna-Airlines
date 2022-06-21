@@ -34,7 +34,7 @@ const Signup = (props) => {
       redirect: "follow",
     };
 
-    fetch("http://127.0.0.1:5001/create", requestOptions)
+    fetch("https://nyna-airlines-server.herokuapp.com/create", requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.log("error", error));
