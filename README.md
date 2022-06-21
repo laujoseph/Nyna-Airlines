@@ -1,6 +1,6 @@
 # Nyna Airlines
 
-This app was developed for my General Assembly Software Engineering Immersive Project 2. Built using the MERN stack with **Material UI**, Nyna airlines is a web-based Flight Booking System based on the Model View Controller (MVC) Architecture. All images found solely belongs to [Singapore Airlines](https://www.singaporeair.com).
+This app was developed for my General Assembly Software Engineering Immersive Project 3. Built using the MERN stack with **Material UI**, Nyna airlines is a web-based Flight Booking System based on the Model View Controller (MVC) Architecture. All images found solely belongs to [Singapore Airlines](https://www.singaporeair.com).
 
 ## Features
 
